@@ -4,6 +4,7 @@ import 'package:itil/lifecycle_page.dart';
 import 'package:itil/my_card.dart';
 import 'package:itil/service_delivery_page.dart';
 import 'package:itil/service_support_page.dart';
+import 'package:itil/svs_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         '/service-support': (_) => ServiceSupportPage(),
         '/service-delivery': (_) => ServiceDeliveryPage(),
         '/lifecycle': (_) => LifecyclePage(),
-        '/svs': (_) => ServiceSupportPage(),
+        '/svs': (_) => SvsPage(),
       },
     );
   }
@@ -81,13 +82,14 @@ Service Delivery to procesy taktyczne, koncentrujące się na planowaniu dostarc
                       'Biblioteka  ITIL została skonstruowana wokół idei cyklu życia usługi. Nowe wymagania biznesowe skutkują nowymi usługami, wprowadzane są poprawki do obecnie świadczonych usług, poprawiane są w nich błędy, aktywnie  szuka  się możliwości poprawy jakości usług i obniżenia kosztów ich dostarczania – to  wszystko sprawia, że mechanizm cyklu życia usługi jest w ciągłym ruchu.'),
                 ),
                 MyCard(
-                  title: 'ITIL 4 Service Value System',
+                  title: 'Service Value System',
                   imageUrl:
                       'https://itsm.tools/wp-content/uploads/2019/04/post-8887-diagram-01.png',
                   readMorePage: '/svs',
                   imagePadding: EdgeInsets.only(left: 32),
                   text: Text(
-                      'W poprzednich wersjach ITIL skupiano się na spełnieniu wymagań określonych przez konsumenta. Lecz zauważono że to podejście bez czynnego udziału konsumenta w tworzeniu produktu nie daje wystarczających rezultatów. Dlatego praktyką wskazywaną przez ITIL w wersji czwartej jest współtworzenie (value co-creation), a nie dostarczana (value delivery). Innymi słowy, działania podejmowane przez dostawcę usługi (Service Provider) nie tworzą wartości same z siebie. Wartość jest realizowana wyłącznie wtedy, gdy klient angażuje się w kontakt z dostawcą usługi przy pomocy relacji usługowej (Service Relationship).'),
+                    'System Wartości Usługi (Service Value System) opisuje w jaki sposób poszczególne komponenty i aktywności dostawcy usługi współpracują ze sobą, aby w odpowiedzi na pojawiający się popyt (Demand) i szanse (Opportunity) kreować wartość (Value) dla interesariuszy.',
+                  ),
                 ),
               ],
             ),
